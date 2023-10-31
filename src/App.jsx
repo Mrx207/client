@@ -1,5 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { DashBoardLayout, Error, HomeLayout, Landing, Login, Register } from "./pages";
+import {
+  DashBoardLayout,
+  Error,
+  HomeLayout,
+  Landing,
+  Login,
+  Register,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
