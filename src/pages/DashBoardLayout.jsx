@@ -8,19 +8,20 @@ const DashboardContext = createContext();
 const DashBoardLayout = () => {
   // temp
   const user = { name: "john" };
-  const { showSidebar, setShowSidebar } = useState(false);
-  const { isDarkTheme, setDarkTheme } = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [isDarkTheme, setDarkTheme] = useState(false);
 
   const toggleDarkTheme = () => {
     console.log("toggle");
   };
 
   const toggleShowSidebar = () => {
-    console.log(showsidebar);
+    console.log("showsidebar");
+    setShowSidebar(!showSidebar);
   };
 
   const logoutUser = async () => {
-    console.log(logout);
+    console.log("logout");
   };
   return (
     <DashboardContext.Provider
